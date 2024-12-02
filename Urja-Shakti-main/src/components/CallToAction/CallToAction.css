@@ -1,0 +1,64 @@
+.cta {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5rem; /* Internal spacing */
+  margin: 4rem auto; /* Center the container horizontally and space vertically */
+  max-width: 1200px; /* Keep the width constrained */
+  border-radius: 20px; /* Smooth edges */
+  display: flex; /* Enable flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Ensure text is centered */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white; /* Ensure text color contrast */
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0; /* Slightly muted text color for description */
+}
+
+.cta-button {
+  background-color: #fff; /* Contrast with primary background */
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem; /* Internal button padding */
+  border-radius: 30px; /* Rounded button corners */
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto; /* Center the button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+  background-color: var(--hover-secondary-color); /* Adjusted hover background */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 2rem;
+    margin: 2rem 1rem; /* Reduce margins for smaller screens */
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}

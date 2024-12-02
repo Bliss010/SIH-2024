@@ -1,0 +1,172 @@
+/* Common styles for Signup and Login Pages */
+.signup-page, .login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f7; /* Subtle grey background for better contrast */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation Bar for Login and Signup Pages */
+  .signup-nav, .login-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .signup-logo, .login-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007aff;
+    text-decoration: none;
+  }
+  
+  .signup-nav-link, .login-nav-link {
+    font-size: 1rem;
+    color: #007aff;
+    text-decoration: none;
+  }
+  
+  .signup-nav-link:hover, .login-nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Center Container */
+  .signup-container, .login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Add padding for smaller screens */
+    box-sizing: border-box;
+  }
+  
+  /* Form Card */
+  .signup-card, .login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ensure the card doesn't exceed 400px width */
+    width: 100%; /* Full width for responsiveness */
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Titles and Descriptions */
+  .signup-title, .login-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .signup-description, .login-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%; /* Full width for the input */
+    padding: 0.75rem; /* Improved padding for better usability */
+    border: 1px solid #ddd; /* Subtle border for input */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Consistent font size */
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus {
+    border-color: #007aff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 4px rgba(65, 105, 225, 0.5); /* Subtle shadow for focus state */
+  }
+  
+  /* Password Input Group */
+  .password-input {
+    position: relative; /* For positioning the button */
+  }
+  
+  .password-input input {
+    width: 100%;
+    padding-right: 3rem; /* Adds space for the "Show/Hide" button */
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .password-input button {
+    position: absolute;
+    top: 50%; /* Vertically centers the button */
+    right: 0.75rem; /* Position button slightly inside the input */
+    transform: translateY(-50%); /* Adjusts vertical alignment */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007aff;
+    font-size: 0.9rem;
+    padding: 0; /* Removes unnecessary padding */
+    line-height: 1; /* Ensures proper alignment */
+  }
+  
+  /* Buttons */
+  .signup-button, .login-button {
+    width: 100%; /* Full width for consistency */
+    padding: 0.75rem; /* Comfortable padding */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007aff; /* Primary blue color */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s; /* Smooth transition effect */
+  }
+  
+  .signup-button:hover, .login-button:hover {
+    background-color: #007aff; /* Darker blue on hover */
+  }
+  
+  /* Footer Links */
+  .signup-footer, .login-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .signup-footer-link, .login-footer-link {
+    color: #007aff;
+    text-decoration: none;
+  }
+  
+  .signup-footer-link:hover, .login-footer-link:hover {
+    text-decoration: underline;
+  }
+.toggle-password{
+    margin-top: 12px;
+}  
+
+.error-text {
+    color: #d32f2f;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+  }
+  
